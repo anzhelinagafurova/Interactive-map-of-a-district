@@ -227,8 +227,9 @@ img {
     border-style: none;
 }
 
-svg:not(:root) {
+svg {
     overflow: hidden;
+    vertical-align: middle;
 }
 
 table {
