@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="defaultstyle.css">
     <link rel="stylesheet" href="bootstrapfiles/bootstrap.css">
     <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body data-spy="scroll">
 
     <!-- Кнопка запуска модального окна -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -36,6 +36,9 @@
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal18">
     Пищевики
 </button>
+
+    <object type="image/svg+xml" data="map.svg"></object>
+
     <!-- Модальное окно -->
     <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -1878,6 +1881,9 @@
                 $("#myModal22").modal("show");
             });
         });
+    </script>
+    <script>
+        $('body').scrollspy();
     </script>
 
 
