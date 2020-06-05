@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body data-spy="scroll">
+<body>
 
     <!-- Кнопка запуска модального окна -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
@@ -36,9 +36,7 @@
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal18">
     Пищевики
 </button>
-
     <object type="image/svg+xml" data="map.svg"></object>
-
     <!-- Модальное окно -->
     <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -1576,11 +1574,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js "></script>
     <script src="bootstrapfiles/bootstrap.min.js "></script>
 
+
+    <script>
+        // document.querySelector('#Button1').onclick = e => {
+        //     document.body.style.overflowX = "hidden";
+        //     document.querySelector('#modal').style.display = 'block';
+        // };
+
+        // document.querySelector('#close').onclick = e => {
+
+        //     document.body.style.overflowY = "scroll";
+
+        //     document.querySelector('#modal').style.display = 'none';
+
+        // };
+    </script>
+
+
+
     <script>
         $(document).ready(function() {
             $("#link3").click(function() {
                 $("#myModal").modal("hide");
                 $("#myModal3 ").modal("show");
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $("html").css("overflow-x: hidden;")
             });
         });
     </script>
@@ -1881,9 +1904,6 @@
                 $("#myModal22").modal("show");
             });
         });
-    </script>
-    <script>
-        $('body').scrollspy();
     </script>
 
 
