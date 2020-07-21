@@ -228,7 +228,7 @@ img {
 }
 
 svg {
-    overflow: hidden;
+    overflow: scroll;
     vertical-align: middle;
 }
 
@@ -5650,7 +5650,7 @@ button.close {
 }
 
 .modal-open .modal {
-    overflow-x: auto;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
